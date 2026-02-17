@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI POEM PROJECT</title>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css">
-    <link rel="stylesheet" href="src/script.js">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     
 </head>
+<body></body>
 <div class="container">
 <header>
         <h1>AI French Poem Generator</h1>
 </header>
-<body>
+
 <main>
-    <form action=""> 
-        <input type="text" placeholder="Enter the topic of your french poem" autofocus required
-        class="instructions"/>
-        
-        <input type="submit" class="submit-button"/>
-    </form id="poem-generator-form">
-    <div class="poem" id="poem">
-        Et nos amours
-        Faut-il qu’il m’en souvienne
-        La joie venait toujours après la peine
-    </div>
+    <form id="poem-generator-form">
+        <input type="text" placeholder="Enter the topic of the French poem" autofocus required autocomplete="off"
+            class="instructions"
+            id="user-instructions" />
+        <input type="submit" class="submit-button" />
+    </form>
+    <div class="poem" id="poem"></div>
+</main>
 </main>
 
     <footer>
@@ -34,6 +32,6 @@
         and hosted on <a href="https://lenah-mithane-poem-generator.netlify.app/">Netlify</a>
     </footer>
 </div>
-    <script src="src/index.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
